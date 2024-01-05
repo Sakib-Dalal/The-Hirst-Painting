@@ -25,6 +25,7 @@ def draw(dots):
     y_pos = -300
     for i in range(dots):
         for j in range(dots):
+            my_turtle.hideturtle()
             my_turtle.penup()
             my_turtle.setposition(x_pos, y_pos)
             print(my_turtle.position())
@@ -39,5 +40,5 @@ def draw(dots):
 
 
 """ change number of dots as you required"""
-draw(dots=15)
+draw(dots=10)
 my_screen.exitonclick()
